@@ -1,0 +1,18 @@
+﻿@model List<ReservaModel>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+            </tr>
+
+        </thead>
+        <tbody>
+        @foreach (var reserva in Model)
+        {
+            <tr>
+                <td>@reserva.Nome</td>
+            </tr>
+        }
+        </tbody>
+    </table>
